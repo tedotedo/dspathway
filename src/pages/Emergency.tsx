@@ -32,7 +32,7 @@ const emergencyContacts = [
   {
     name: 'North Tees A&E',
     nameEasy: 'Hospital A&E',
-    number: '01onal642 617617',
+    number: '01642 617 617',
     address: 'University Hospital of North Tees, Hardwick Road, Stockton-on-Tees, TS19 8PE',
     description: 'Accident and Emergency department',
     descriptionEasy: 'The hospital emergency department',

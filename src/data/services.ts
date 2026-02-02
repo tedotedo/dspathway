@@ -9,7 +9,7 @@ export const services: Service[] = [
     icon: 'stethoscope',
     category: 'paediatrics',
     contacts: [
-      { type: 'phone', value: '01onal642 617617', label: 'North Tees Hospital' },
+      { type: 'phone', value: '01642 617 617', label: 'North Tees Hospital' },
     ],
     referralInfo: 'Referral from GP or hospital paediatrician. All children with Down Syndrome are automatically referred.',
     areas: ['both'],
@@ -35,7 +35,7 @@ export const services: Service[] = [
     icon: 'eye',
     category: 'ophthalmology',
     contacts: [
-      { type: 'phone', value: '01642 617617', label: 'North Tees Ophthalmology' },
+      { type: 'phone', value: '01642 617 617', label: 'North Tees Ophthalmology' },
     ],
     referralInfo: 'Health visitor refers at 18 months for orthoptic screening. Can also be referred by paediatrician or GP.',
     areas: ['both'],
@@ -48,7 +48,7 @@ export const services: Service[] = [
     icon: 'message-circle',
     category: 'speech-language',
     contacts: [
-      { type: 'phone', value: '01onal642 617617', label: 'Referrals' },
+      { type: 'phone', value: '01642 617 617', label: 'Referrals' },
       { type: 'email', value: 'nth-tr.saltcypteam@nhs.net', label: 'SALT Team' },
     ],
     referralInfo: 'Open referral - parents, schools, or health professionals can refer. Referral forms available online.',
@@ -63,7 +63,7 @@ export const services: Service[] = [
     icon: 'activity',
     category: 'physiotherapy',
     contacts: [
-      { type: 'phone', value: '01642 617617', label: 'Referrals' },
+      { type: 'phone', value: '01642 617 617', label: 'Referrals' },
     ],
     referralInfo: 'Needs-led service with open referral. Community paediatrician typically refers at 3-month review.',
     areas: ['both'],
@@ -76,7 +76,7 @@ export const services: Service[] = [
     icon: 'hand',
     category: 'occupational-therapy',
     contacts: [
-      { type: 'phone', value: '01642 617617', label: 'Referrals' },
+      { type: 'phone', value: '01642 617 617', label: 'Referrals' },
     ],
     referralInfo: 'Open referral service. Sunflower Sensory Service available for children age 4-11 with ASD diagnosis.',
     areas: ['both'],
@@ -89,7 +89,7 @@ export const services: Service[] = [
     icon: 'utensils',
     category: 'dietetics',
     contacts: [
-      { type: 'phone', value: '01642 617617', label: 'Referrals' },
+      { type: 'phone', value: '01642 617 617', label: 'Referrals' },
     ],
     referralInfo: 'Referral from paediatrician, GP, or health visitor.',
     areas: ['both'],
@@ -167,7 +167,7 @@ export const services: Service[] = [
     icon: 'arrow-right',
     category: 'paediatrics',
     contacts: [
-      { type: 'phone', value: '01642 617617', label: 'North Tees Trust' },
+      { type: 'phone', value: '01642 617 617', label: 'North Tees Trust' },
     ],
     referralInfo: 'Community paediatrician refers around age 13-14.',
     ageRange: '13-18 years',

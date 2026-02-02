@@ -71,6 +71,23 @@ const quickLinks = [
   },
 ];
 
+function VideoBackground() {
+  return (
+    <div className="fixed inset-0 -z-10 overflow-hidden">
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute min-w-full min-h-full object-cover opacity-15"
+      >
+        <source src="/images/dshappyboy.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white/80" />
+    </div>
+  );
+}
+
 function RoleSelector({ onSelect }: { onSelect: (role: UserRole) => void }) {
   const { settings } = useAccessibility();
 
@@ -79,8 +96,10 @@ function RoleSelector({ onSelect }: { onSelect: (role: UserRole) => void }) {
     : 'Welcome to the Down Syndrome Pathway for Stockton and Hartlepool. Please select your role to personalise your experience.';
 
   return (
-    <div className="page-container animate-fade-in">
-      <div className="text-center mb-8">
+    <>
+      <VideoBackground />
+      <div className="page-container animate-fade-in relative">
+        <div className="text-center mb-8">
         <div className="w-20 h-20 mx-auto mb-4 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center text-white text-3xl font-bold shadow-card">
           DS
         </div>
@@ -129,12 +148,13 @@ function RoleSelector({ onSelect }: { onSelect: (role: UserRole) => void }) {
         })}
       </div>
 
-      <p className="text-center text-sm text-warm-500 mt-6">
-        {settings.easyRead
-          ? 'You can change this later in the settings.'
-          : 'You can change your role at any time from the dashboard.'}
-      </p>
-    </div>
+        <p className="text-center text-sm text-warm-500 mt-6">
+          {settings.easyRead
+            ? 'You can change this later in the settings.'
+            : 'You can change your role at any time from the dashboard.'}
+        </p>
+      </div>
+    </>
   );
 }
 
@@ -164,8 +184,10 @@ function Dashboard({ role, onChangeRole }: { role: UserRole; onChangeRole: () =>
   const greeting = role ? (settings.easyRead ? greetings[role].easy : greetings[role].standard) : '';
 
   return (
-    <div className="page-container animate-fade-in">
-      {/* Welcome Section */}
+    <>
+      <VideoBackground />
+      <div className="page-container animate-fade-in relative">
+        {/* Welcome Section */}
       <div className="card mb-6 bg-gradient-to-br from-primary-50 to-white border-primary-100">
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
@@ -256,15 +278,16 @@ function Dashboard({ role, onChangeRole }: { role: UserRole; onChangeRole: () =>
         </div>
       </div>
 
-      {/* Footer note */}
-      <div className="mt-8 text-center">
-        <p className="text-sm text-warm-500">
-          {settings.easyRead
-            ? 'This app was made by the NHS and local families.'
-            : 'Created in partnership with families and North Tees & Hartlepool NHS Foundation Trust'}
-        </p>
+        {/* Footer note */}
+        <div className="mt-8 text-center">
+          <p className="text-sm text-warm-500">
+            {settings.easyRead
+              ? 'This app was made by the NHS and local families.'
+              : 'Created in partnership with families and North Tees & Hartlepool NHS Foundation Trust'}
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -79,7 +79,7 @@ function VideoBackground() {
         loop
         muted
         playsInline
-        className="absolute min-w-full min-h-full object-cover opacity-10"
+        className="absolute min-w-full min-h-full object-cover opacity-30"
       >
         <source src="/images/dshappyboy.mp4" type="video/mp4" />
       </video>

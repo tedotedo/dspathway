@@ -71,6 +71,9 @@ public/
 
 ## Resources Included
 
+### Official
+- [NHS Down Syndrome Pathway - Stockton & Hartlepool](https://northeastnorthcumbria.nhs.uk/our-work/down-syndrome-pathway-stockton-and-hartlepool/)
+
 ### Local (Stockton & Hartlepool)
 - Down Syndrome North East (DSNE)
 - Parent Carer Forums

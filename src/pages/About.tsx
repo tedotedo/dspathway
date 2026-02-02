@@ -195,15 +195,15 @@ export default function About() {
 
         <div className="space-y-3">
           <a
-            href="https://nenc-teesvalley.icb.nhs.uk/our-work/down-syndrome-pathway/"
+            href="https://northeastnorthcumbria.nhs.uk/our-work/down-syndrome-pathway-stockton-and-hartlepool/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between p-3 bg-warm-50 rounded-xl hover:bg-warm-100 transition-colors"
+            className="flex items-center justify-between p-3 bg-primary-50 rounded-xl hover:bg-primary-100 transition-colors border border-primary-200"
           >
-            <span className="text-warm-700">
-              {settings.easyRead ? 'Official NHS Pathway Page' : 'NHS Tees Valley Pathway Page'}
+            <span className="text-primary-700 font-medium">
+              {settings.easyRead ? 'Official NHS Pathway Website' : 'NHS Down Syndrome Pathway - Stockton & Hartlepool'}
             </span>
-            <ExternalLink className="w-4 h-4 text-warm-400" />
+            <ExternalLink className="w-4 h-4 text-primary-500" />
           </a>
 
           <a

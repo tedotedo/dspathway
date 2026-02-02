@@ -1,6 +1,19 @@
 import type { Resource } from '../types';
 
 export const resources: Resource[] = [
+  // Official NHS Pathway
+  {
+    id: 'nhs-pathway',
+    name: 'Down Syndrome Pathway - Stockton & Hartlepool',
+    description: 'The official NHS North East and North Cumbria Down Syndrome Pathway page for Stockton and Hartlepool. Information about the pathway, services, and how to access support.',
+    descriptionEasyRead: 'The official NHS website about the Down Syndrome Pathway for Stockton and Hartlepool.',
+    category: 'health-medical',
+    ageGroups: ['all-ages'],
+    icon: 'hospital',
+    website: 'https://northeastnorthcumbria.nhs.uk/our-work/down-syndrome-pathway-stockton-and-hartlepool/',
+    isLocal: true,
+    isFeatured: true,
+  },
   // Local Support
   {
     id: 'dsne',

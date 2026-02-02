@@ -12,6 +12,7 @@ A mobile-friendly Progressive Web App (PWA) providing support pathway informatio
 - **Support resources** - Local and national organisations, charities, and apps
 - **Offline support** - Works without internet connection as a PWA
 - **Personal notes** - Store care information locally with backup/restore
+- **Video background** - Cheerful looping video on home page
 
 ## Tech Stack
 
@@ -49,6 +50,8 @@ src/
 ├── hooks/               # useLocalStorage
 ├── pages/               # All page components
 └── types/               # TypeScript interfaces
+public/
+└── images/              # Video assets
 ```
 
 ## Accessibility Features

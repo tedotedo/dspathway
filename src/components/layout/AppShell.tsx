@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import { AccessibilityPanel } from '../accessibility/AccessibilityPanel';
+import { EasyReadToggle } from '../accessibility/EasyReadToggle';
 import { useAccessibility } from '../../contexts/AccessibilityContext';
 
 const navItems = [
@@ -90,8 +91,13 @@ export function AppShell() {
           ))}
         </nav>
 
-        {/* Accessibility Settings */}
+        {/* Easy Read Toggle - Always Visible */}
         <div className="p-4 border-t border-warm-200">
+          <EasyReadToggle showLabel={true} />
+        </div>
+
+        {/* More Accessibility Settings */}
+        <div className="px-4 pb-2">
           <AccessibilityPanel />
         </div>
 
@@ -119,7 +125,8 @@ export function AppShell() {
             </span>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1">
+            <EasyReadToggle showLabel={false} compact={true} />
             <AccessibilityPanel />
             <button
               onClick={() => setMobileMenuOpen(true)}
@@ -152,6 +159,11 @@ export function AppShell() {
             </div>
 
             <nav className="p-4 space-y-1">
+              {/* Easy Read Toggle - Prominent in drawer */}
+              <div className="mb-4">
+                <EasyReadToggle showLabel={true} />
+              </div>
+
               {[...navItems, ...secondaryNavItems].map((item) => (
                 <NavLink
                   key={item.path}
@@ -191,7 +203,7 @@ export function AppShell() {
       {/* Mobile Bottom Navigation */}
       <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-warm-200 shadow-nav safe-bottom z-40">
         <div className="flex items-center justify-around px-2 py-2">
-          {navItems.slice(0, 4).map((item) => {
+          {navItems.slice(0, 3).map((item) => {
             const isActive = location.pathname === item.path;
             return (
               <NavLink
@@ -210,6 +222,8 @@ export function AppShell() {
               </NavLink>
             );
           })}
+          {/* Easy Read Toggle in Bottom Nav */}
+          <EasyReadToggle compact={true} showLabel={false} />
           <button
             onClick={() => setMobileMenuOpen(true)}
             className="flex flex-col items-center gap-1 px-3 py-2 rounded-xl text-warm-500 hover:text-warm-700 transition-colors"

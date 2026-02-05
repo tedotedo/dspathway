@@ -98,6 +98,13 @@ public/
 
 Built in partnership with families and North Tees & Hartlepool NHS Foundation Trust.
 
+## Copyright
+
+© 2026 Dr Odet Mark Aszkenasy, FRCP, DA, DCH, MFPHM
+Consultant Paediatrician
+
+This website was designed and is copyright by Dr Odet Mark Aszkenasy.
+
 ## License
 
 MIT

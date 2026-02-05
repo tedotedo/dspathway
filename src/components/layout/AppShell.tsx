@@ -94,6 +94,17 @@ export function AppShell() {
         <div className="p-4 border-t border-warm-200">
           <AccessibilityPanel />
         </div>
+
+        {/* Copyright Footer */}
+        <div className="p-4 border-t border-warm-200 text-center">
+          <p className="text-[10px] text-warm-400 leading-relaxed">
+            © {new Date().getFullYear()} Dr Odet Mark Aszkenasy
+            <br />
+            FRCP, DA, DCH, MFPHM
+            <br />
+            Consultant Paediatrician
+          </p>
+        </div>
       </aside>
 
       {/* Mobile Header */}
@@ -159,6 +170,15 @@ export function AppShell() {
                 </NavLink>
               ))}
             </nav>
+
+            {/* Copyright Footer - Mobile */}
+            <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-warm-200 bg-white text-center">
+              <p className="text-[10px] text-warm-400 leading-relaxed">
+                © {new Date().getFullYear()} Dr Odet Mark Aszkenasy, FRCP, DA, DCH, MFPHM
+                <br />
+                Consultant Paediatrician
+              </p>
+            </div>
           </div>
         </div>
       )}

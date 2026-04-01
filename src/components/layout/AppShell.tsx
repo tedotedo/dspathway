@@ -14,6 +14,7 @@ import {
 import { useState } from 'react';
 import { AccessibilityPanel } from '../accessibility/AccessibilityPanel';
 import { EasyReadToggle } from '../accessibility/EasyReadToggle';
+import { FeedbackButton } from './FeedbackButton';
 import { useAccessibility } from '../../contexts/AccessibilityContext';
 
 const navItems = [
@@ -199,6 +200,9 @@ export function AppShell() {
       <main className="flex-1 md:ml-64 pb-20 md:pb-0">
         <Outlet />
       </main>
+
+      {/* Feedback Button */}
+      <FeedbackButton />
 
       {/* Mobile Bottom Navigation */}
       <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-warm-200 shadow-nav safe-bottom z-40">

@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AppShell } from './components/layout/AppShell';
+import { MedicalDisclaimer } from './components/common/MedicalDisclaimer';
 import { AccessibilityProvider } from './contexts/AccessibilityContext';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import type { UserRole } from './types';
@@ -19,6 +20,7 @@ function AppContent() {
 
   return (
     <AccessibilityProvider userRole={role}>
+      <MedicalDisclaimer />
       <Router>
         <Routes>
           <Route path="/" element={<AppShell />}>

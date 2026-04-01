@@ -17,7 +17,7 @@ export default function About() {
 
   const handleExportData = () => {
     const data: Record<string, string | null> = {};
-    const keys = ['ds-pathway-role', 'ds-pathway-accessibility', 'ds-pathway-myinfo', 'ds-pathway-checklists'];
+    const keys = ['ds-pathway-role', 'ds-pathway-accessibility', 'ds-pathway-myinfo', 'ds-pathway-checklists', 'ds-pathway-disclaimer-accepted'];
 
     keys.forEach((key) => {
       data[key] = localStorage.getItem(key);
@@ -66,7 +66,7 @@ export default function About() {
           : 'Are you sure you want to delete all saved data? This action cannot be undone.'
       )
     ) {
-      const keys = ['ds-pathway-role', 'ds-pathway-accessibility', 'ds-pathway-myinfo', 'ds-pathway-checklists'];
+      const keys = ['ds-pathway-role', 'ds-pathway-accessibility', 'ds-pathway-myinfo', 'ds-pathway-checklists', 'ds-pathway-disclaimer-accepted'];
       keys.forEach((key) => localStorage.removeItem(key));
       window.location.reload();
     }
@@ -237,18 +237,6 @@ export default function About() {
         </p>
       </div>
 
-      {/* Contact */}
-      <div className="mt-6 text-center text-sm text-warm-500">
-        <p>
-          {settings.easyRead ? 'Found a mistake? ' : 'Report errors or suggest changes: '}
-          <a
-            href="mailto:nencicbtv.enquiries@nhs.net?subject=DS%20Pathway%20App%20Feedback"
-            className="text-primary-600 hover:text-primary-700"
-          >
-            nencicbtv.enquiries@nhs.net
-          </a>
-        </p>
-      </div>
     </div>
   );
 }
